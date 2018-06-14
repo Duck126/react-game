@@ -1,0 +1,128 @@
+ [
+     {
+         "id": 1,
+         "name": "Angela",
+         "clicked": false,
+         "urlName": "../imgs/angela.jpg"
+     },
+     {
+         "id": 2,
+         "name": "Armistice",
+         "clicked": false,
+         "urlName": "./imgs/armistice.jpg"
+     },
+     {
+         "id": 3,
+         "name": "Ashley",
+         "clicked": false,
+         "urlName": "./imgs/ashleyStubbs.jpg"
+     },
+     {
+         "id": 4,
+         "name": "Bernard",
+         "clicked": false,
+         "urlName": "./imgs/bernardLowe.jpg"
+     },
+     {
+         "id": 5,
+         "name": "Charloette",
+         "clicked": false,
+         "urlName": "./imgs/charloetteHale.jpg"
+     },
+     {
+         "id": 6,
+         "name": "Clementine",
+         "clicked": false,
+         "urlName": "./imgs/clementinePennyFeather.jpg"
+     },
+     {
+         "id": 7,
+         "name": "Dolores",
+         "clicked": false,
+         "urlName": "./imgs/doloresAbernathy.png"
+     },
+     {
+         "id": 8,
+         "name": "Lawrence",
+         "clicked": false,
+         "urlName": "./imgs/lawrence.jpg"
+     },
+     {
+         "id": 9,
+         "name": "Lee",
+         "clicked": false,
+         "urlName": "./imgs/leeSizemore.jpg"
+     },
+     {
+         "id": 10,
+         "name": "Logan",
+         "clicked": false,
+         "urlName": "./imgs/logan.jpg"
+     },
+     {
+         "id": 11,
+         "name": "Maeve",
+         "clicked": false,
+         "urlName": "./imgs/maeveMillay.jpg"
+     },
+     {
+         "id": 12,
+         "name": "Man in Black",
+         "clicked": false,
+         "urlName": "./imgs/manInBlack.jpg"
+     },
+     {
+         "id": 13,
+         "name": "Robert F.",
+         "clicked": false,
+         "urlName": "./imgs/robertFord.jpg"
+     },
+     {
+         "id": 14,
+         "name": "Shannon",
+         "clicked": false,
+         "urlName": "/imgs/shannonHughes.jpg"
+     },
+     {
+         "id": 15,
+         "name": "Hector",
+         "clicked": false,
+         "urlName": "./imgs/hectorEscaton.jpg"
+     },
+     {
+         "id": 16,
+         "name": "Felix",
+         "clicked": false,
+         "urlName": "./imgs/felixLutz.jpg"
+     },
+     {
+         "id": 17,
+         "name": "Teddy",
+         "clicked": false,
+         "urlName": "./imgs/teddyFlood.jpg"
+     },
+     {
+         "id": 18,
+         "name": "Theresa",
+         "clicked": false,
+         "urlName": "./imgs/theresaCullen.jpg"
+     },
+     {
+         "id": 19,
+         "name": "William",
+         "clicked": false,
+         "urlName": "./imgs/william.jpg"
+     },
+     {
+        "id": 20,
+        "name": "Craddock",
+        "clicked": false,
+        "urlName": "./imgs/majorCraddock.jpg"
+     },
+     {
+        "id": 21,
+        "name": "Karl",
+        "clicked": false,
+        "urlName": "./imgs/karlStrand.jpg"
+     }
+ ]
