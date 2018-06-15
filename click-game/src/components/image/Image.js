@@ -1,17 +1,50 @@
 import React from "react";
-import "./image.css";
+import NewImage from "./NewImage";
+import images from "./../../image.json";
 
-const Image = props => {
-    const images = props.images;
-  return(
-      <div>
-        {images.map(item => (
-        
-          <img className="responsive-img gameimg" alt={item.name} key={item.id} checked={item.clicked} src={item.urlName} onClick={props.userGuess}></img>
+class Image extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {clicked: false, images: images}; 
+ };
 
-        ))}
-      </div>
-    );
+    randomize = () =>  {
+        var temp = JSON.parse(JSON.stringify(this.state.images));
+        var currentIndex = temp.length, temporaryValue, randomIndex;
+        while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+            temporaryValue = temp[currentIndex];
+            temp[currentIndex] = temp[randomIndex];
+            temp[randomIndex] = temporaryValue;
+        };
+        this.setState({images: temp});
+    };
+
+    userGuess = (index) => {
+        if(this.state.images[index].clicked === true){
+            alert("You Lost Dude");
+        } else {
+            var temp = JSON.parse(JSON.stringify(this.state.images));
+            this.setState({images: temp});
+            this.setState({clicked: this.state.images[index].clicked = true});
+            //console.log(temp[index].clicked=true);
+            this.randomize();
+        }
+    };
+
+    render() {
+        return (
+            <div className="container img">
+                <NewImage 
+                    images={this.state.images}
+                    userGuess={this.userGuess}
+          //state={this.state}
+                />
+            </div>
+        );
+    };
 };
 
 export default Image;
+
