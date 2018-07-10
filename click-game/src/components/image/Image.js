@@ -1,12 +1,32 @@
 import React from "react";
 import NewImage from "./NewImage";
+import ResetButton from "../ResetButton/ResetButton";
 import images from "./../../image.json";
+import "./image.css";
+
 
 class Image extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {clicked: false, images: images}; 
- };
+    this._initState = {
+        clicked: false, 
+        images: images,
+    }
+    this.score = 0;
+    // Saving Deep copy of the State.
+    this.state = JSON.parse(JSON.stringify(this._initState));
+ }
+
+    componentWillUpdate = (props, nextState) => {
+        console.log("This is The nextState", nextState);
+    }
+
+    resetState = event => {
+        event.preventDefault();
+        //Setting Deep copy of the State.
+        this.setState(JSON.parse(JSON.stringify(this._initState)));
+        console.log(this.state);
+    }
 
     randomize = () =>  {
         var temp = JSON.parse(JSON.stringify(this.state.images));
@@ -23,23 +43,30 @@ class Image extends React.Component {
 
     userGuess = (index) => {
         if(this.state.images[index].clicked === true){
-            alert("You Lost Dude");
+            alert("You Lost! Play again? Hit Reset!");
         } else {
+            this.setState({score: this.score + 1});
             var temp = JSON.parse(JSON.stringify(this.state.images));
-            this.setState({images: temp});
-            this.setState({clicked: this.state.images[index].clicked = true});
-            //console.log(temp[index].clicked=true);
+            this.setState({
+                images: temp,
+                clicked: this.state.images[index].clicked = true
+            });
+            // this.setState({clicked: this.state.images[index].clicked = true});
             this.randomize();
+            console.log(this.score);
         }
     };
 
     render() {
         return (
-            <div className="container img">
+            <div className="container">
                 <NewImage 
                     images={this.state.images}
                     userGuess={this.userGuess}
           //state={this.state}
+                />
+                <ResetButton
+                    handleReset={this.resetState}
                 />
             </div>
         );

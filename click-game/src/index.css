@@ -5,7 +5,15 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: black;
+  
+}
+
+html {
+  background: url(https://stmed.net/sites/default/files/westworld-wallpapers-31749-3840624.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main {
