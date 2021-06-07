@@ -1,0 +1,29 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(254, 249, 251, 1) 13%,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(253, 59, 1, 1) 29%,
+    rgba(0, 0, 0, 1) 32%,
+    rgba(0, 0, 0, 1) 42%,
+    rgba(247, 222, 157, 1) 45%,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(0, 0, 0, 1) 58%,
+    rgba(13, 251, 114, 1) 61%,
+    rgba(0, 0, 0, 1) 64%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(85, 205, 244, 1) 77%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 1) 87%,
+    rgba(189, 95, 222, 1) 90%,
+    rgba(0, 0, 0, 1) 93%
+  );
+}
