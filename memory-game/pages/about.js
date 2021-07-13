@@ -1,11 +1,14 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/About.module.css'
 
 
 const about = () => {
     return (
-        <div>
-            <h2>This is My About Page</h2>
-        </div>
+        <>
+            <div className={styles.aboutContainer}>
+                <h2>React Force Click Memory Game</h2>
+                <p>A simple memorization game built with React JS and CSS - Try not to click the same character more than once!</p>
+            </div>
+        </>
     )
 }
 

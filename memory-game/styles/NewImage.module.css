@@ -1,3 +1,28 @@
+.lostGame {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: 100;
+    background-color: black;
+    background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/10/six-scariest-sith-palpatine-TALL.jpg);
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: width ease-in-out 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lostHeading {
+    color: whitesmoke;
+    text-align: center;
+    justify-self: center;
+    flex-basis: 100%;
+}
+
 .imgDiv {
     display: inline-flex;
     flex-direction: row;
@@ -29,6 +54,17 @@
     border-radius: 5px;
 }
 
+.lostreset {
+    color: whitesmoke;
+    background-color: black;
+    width: 75px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border:greenyellow 2px solid;
+    border-radius: 5px;
+}
+
 .reset:hover {
     background-color: black;
     color: whitesmoke;
@@ -39,6 +75,12 @@
     flex-basis: 20%;
     align-self: center;
     justify-self: center;
+}
+
+.lostresetButton {
+    flex-basis: 20%;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 .grid {

@@ -1,0 +1,16 @@
+.aboutContainer {
+    color: whitesmoke;
+    background-color: black;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border:greenyellow 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 15%;
+    left: 10vw;
+}
